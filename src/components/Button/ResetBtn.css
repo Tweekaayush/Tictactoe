@@ -1,0 +1,41 @@
+.resetContanier button{
+    background-color: #4A55A2;
+    border:none;
+    color:white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 2rem;
+    margin: 32px;
+    font-family: "McLaren", cursive;
+    position: relative;
+    z-index: 1;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+    overflow: hidden;
+}
+
+.resetContanier button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:#444fa1;
+    z-index: -1;
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resetContanier button:hover::before,
+.resetContanier button:focus::before{
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 450px) {
+    .resetContanier button{
+        font-size: 1.5rem;
+    }
+}
+
+

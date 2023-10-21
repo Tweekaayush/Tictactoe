@@ -1,0 +1,47 @@
+.headingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 16px;
+    gap: 2rem;
+    color: #4A55A2;
+    font-family: "McLaren", cursive;
+}
+
+.headingContainer h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.headingContainer h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.headingContainer > div{
+    display: flex;
+    gap:2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:450px) {
+    .headingContainer h1{
+        font-size: 3.3rem;
+    }
+    
+    .headingContainer h3{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .headingContainer > div{
+        display: flex;
+        gap:2rem;
+        font-size:1.1rem;
+        font-weight: 500;
+    }
+    
+}

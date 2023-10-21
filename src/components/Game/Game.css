@@ -1,0 +1,70 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 1rem;
+}
+.gameContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 300px;
+    width: 300px;
+    background: rgb(197,223,248);
+   }
+
+.gameContainer > div{
+    
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: #4A55A2;
+    font-size: 2.5rem;
+    border:1px solid #4A55A2;
+}
+
+
+.resetContanier, .resultContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.resultContainer h1{
+    color: rgb(255, 53, 53);
+    font-family: "McLaren", cursive;
+    font-size: 2.5rem;
+    
+}
+
+.win{
+    color: rgb(255, 53, 53) !important;
+}
+
+@media screen and (max-width: 450px) {
+    .gameContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 270px;
+        width: 270px;
+        background: rgb(197,223,248);
+       }
+    
+    .gameContainer > div{
+        
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        color: #4A55A2;
+        font-size: 2.5rem;
+        border:1px solid #4A55A2;
+    }
+}
